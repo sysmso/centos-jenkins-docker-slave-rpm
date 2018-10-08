@@ -2,7 +2,7 @@ FROM centos:latest
 MAINTAINER Martin Souchal <souchal@apc.in2p3.fr>
 
 
-RUN yum install -y openssh-server git unzip zip lsof java-1.8.0-openjdk-headless rpmdevtools yum-utils build-essentials && yum clean all
+RUN yum install -y openssh-server git unzip wget gcc-c++ gcc-gfortran zip lsof java-1.8.0-openjdk-headless rpmdevtools yum-utils build-essentials && yum clean all
 
 RUN yum group install -y "Development Tools" 
 
